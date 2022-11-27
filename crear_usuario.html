@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>crear usuario</title>
+    <style>
+        :root {
+            --main-primary: black;
+           --main-black: #000;
+           --main-dark: #292F33;
+           --main-gray: rgb(57, 61, 65);
+           --main-light-gray: #E1E8ED;
+           --main-light-blue: red;
+           --main-blue: red;
+           --main-light: rgba(247, 242, 242, 0.897);
+           --main-orange: gray;
+       }
+
+        body{
+            background: var(--main-primary);
+            margin: 0;
+        }
+
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+       
+       .title-form{
+           text-align: center;
+           color: var(--main-dark);
+       }
+
+       .card {
+           width: 600px;
+           padding: 20px;
+           background-color: var(--main-light-gray);
+           border: 2px solid var(--main-dark);
+           border-radius: 10px;
+           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       }
+       
+       .form-register{
+           display: flex;
+           flex-direction: column;
+           margin-top: 10vh;
+       }
+       
+       .form-group{
+           align-self: center;			
+           width: 80%;
+       }
+       
+       .input {
+           width: 100%;
+           padding: 10px;
+           margin-bottom: 25px;
+           background-color: transparent;
+           border: none;
+           border-bottom: 2px solid var(--main-light-blue);
+           border-radius: 10px;
+           box-sizing: border-box;
+           outline: none;
+             transition: border-bottom 0.2s;
+       }
+
+       .input:focus {
+           border-bottom: 4px solid var(--main-orange);
+       }
+       
+       .label{
+           padding-left: 2px;
+           font-size: 1.3em;
+       }
+
+       .btn{
+           padding: 10px;
+           border-radius: 8px;
+           cursor: pointer;
+           font-size: 2em;
+           font-weight: bolder;
+           color:var(--main-light);
+           background-color: var(--main-light-blue);
+           transition: background-color 0.4s,color 0.4s;
+       }
+
+       .btn:hover{
+         background-color: var(--main-orange);
+         color: var(--main-light-blue);
+       }
+
+       .line{
+           width: 100%;
+           border: 1px solid gray;
+       }
+     
+@media(max-width:864px){
+ .card{
+   width: 400px;
+ }
+}
+
+@media(max-width:524px){
+ .card{
+   width: 300px;
+ }
+ .form-register{
+           margin-top: 5vh;
+       }
+}
+
+
+
+   </style>
+</head>
+<body>
+    <div class="container">
+		
+        <form class="card form form-register">
+            <h1 class="title-form">Registrar Usuario</h1>
+            
+            <div class="form-group">
+            	<label for="name" class="label label-name">Nombre</label>
+            	<input class="input input-name" id="name" type="text" name="name" placeholder="Escriba el nombre" required>
+            </div>
+
+            <div class="form-group">
+            	<label for="email" class="label label-email">Correo</label>
+            	<input class="input input-email" id="email" type="email" name="email" placeholder="Escriba el correo" required>
+            </div>
+            
+
+            <div class="form-group">
+            	<label for="password" class="label label-password">Contraseña</label>
+            	<input class="input input-password" id="password" type="password" name="password" placeholder="Escriba la contraseña" required>
+            </div>
+            
+
+            <div class="form-group">
+            	<label for="confirmPassword" class="label label-confirm-password">Confirmar contraseña</label>
+            <input class="input input-confirm-assword" id="confirmPassword" type="password" name="confirmPassword" placeholder="Repita su contraseña" required>
+            </div>
+
+			<hr class="line"/>
+            <input class="btn btn-submit" type="submit" value="Registrar &raquo">
+        </form>
+	</div>
+
+</body>
+</html>

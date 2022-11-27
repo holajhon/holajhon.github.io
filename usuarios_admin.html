@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="JAVA/js.js">
+    <style>
+        @charset "UTF-8";
+		@import 'https://fonts.googleapis.com/css?family=Raleway';
+		body {
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+			line-height: 1.42em;
+			color:#4B4A4B;
+			background-color:#FFDAC4;
+			background: url(http://www.pixeden.com/media/k2/galleries/131/002-subtle-light-pattern-background-texture.jpg);
+		}
+
+		h1 {
+			font-size:3em; 
+			font-weight: 300;
+			line-height:1em;
+			text-align: center;
+			color: #FD2E4A;
+		}
+
+		.listado th h1 {
+			font-weight: bold;
+			font-size: 1em;
+			text-align: left;
+		  	color: #FFFFFF;
+		}
+
+		.listado td {
+			font-weight: normal;
+			font-size: 1em;
+			-webkit-box-shadow: 0 2px 2px -2px #0E1119;
+			-moz-box-shadow: 0 2px 2px -2px #0E1119;
+			box-shadow: 0 2px 2px -2px #0E1119;
+		}
+
+		.listado {
+			text-align: left;
+			overflow: hidden;
+			width: 80%;
+			margin: 0 auto;
+			display: table;
+			padding: 0 0 8em 0;
+		}
+
+		.listado td, .listado th {
+			padding-bottom: 2%;
+			padding-top: 2%;
+			padding-left:2%;  
+		}
+
+		.listado tr:nth-child(odd) {
+			background-color: #EEEAE7;
+		}
+
+		.listado tr:nth-child(even) {
+			background-color: #FFFFFF;
+		}
+
+		.listado th {
+			background-color: red;
+		}
+
+		.listado td:first-child { 
+			color: #FC1231; 
+		}
+
+		.listado tr:hover {
+			background-color: gray;
+			-webkit-box-shadow: 0 6px 6px -6px #0E1119;
+			-moz-box-shadow: 0 6px 6px -6px #0E1119;
+			box-shadow: 0 6px 6px -6px #0E1119;
+		}
+
+		td a {
+			color: #4B4A4B;
+		}
+
+		td a:hover {
+			color: #FFFFFF;
+		}
+
+		.listado td.icono:hover {
+			background-color: #FC1231;
+			
+			box-shadow: #BA0F26 -1px 1px, #BA0F26 -2px 2px, #BA0F26 -3px 3px, #BA0F26 -4px 4px, #BA0F26 -5px 5px, #BA0F26 -6px 6px;
+			transform: translate3d(6px, -6px, 0);
+
+			transition-delay: 0s;
+			transition-duration: 0.4s;
+			transition-property: all;
+			transition-timing-function: line;
+		}	
+    </style>
+</head>
+<body>
+    <script src="https://use.fontawesome.com/bf66789927.js"></script>
+    <h1>usuarios</h1>
+
+		<table class="listado">
+			<thead>
+				<tr>
+					<th><h1>ID</h1></th>
+					<th><h1>Nombre</h1></th>
+					<th><h1>Estado</h1></th>
+					<th colspan="2"><h1>Opciones</h1></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>U001</td>
+					<td>Juan Carlos Merlos</td>
+					<td>Activo</td>
+					<td class="icono"><a href="#"><span class="fa fa-pencil-square-o fa-2x"></span></a></td>	
+					<td class="icono"><a href="#"><span class="fa fa-trash fa-2x"></span></a></td>	
+				</tr>
+				<tr>
+					<td>U002</td>
+					<td>Ana Mirna Contreras</td>
+					<td>Activo</td>
+					<td class="icono"><a href="#"><span class="fa fa-pencil-square-o fa-2x"></span></a></td>	
+					<td class="icono"><a href="#"><span class="fa fa-trash fa-2x"></span></a></td>	
+				</tr>
+				<tr>
+					<td>U003</td>
+					<td>Luc&iacute;a del Carmen Aguilar</td>
+					<td>Inactivo</td>
+					<td class="icono"><a href="#"><span class="fa fa-pencil-square-o fa-2x"></span></a></td>	
+					<td class="icono"><a href="#"><span class="fa fa-trash fa-2x"></span></a></td>		
+				</tr>
+				<tr>
+					<td>U004</td>
+					<td>Luis Francisco Dur&aacute;n</td>
+					<td>Activo</td>
+					<td class="icono"><a href="#"><span class="fa fa-pencil-square-o fa-2x"></span></a></td>	
+					<td class="icono"><a href="#"><span class="fa fa-trash fa-2x"></span></a></td>		
+				</tr>
+				<tr>
+					<td>U005</td>
+					<td>Ileana Carolina Fuentes</td>
+					<td>Activo</td>
+					<td class="icono"><a href="#"><span class="fa fa-pencil-square-o fa-2x"></span></a></td>	
+					<td class="icono"><a href="#"><span class="fa fa-trash fa-2x"></span></a></td>		
+				</tr>
+			</tbody>
+		</table>
+</body>
+</html>
